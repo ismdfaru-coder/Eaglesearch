@@ -1,0 +1,236 @@
+:root {
+    --primary-color: #ff5000; /* Distinctive orange accent */
+    --bg-color: #f4f4f9;
+    --card-bg: #ffffff;
+    --text-main: #222222;
+    --text-secondary: #666666;
+    --border-color: #e0e0e0;
+    --hover-bg: #f0f0f0;
+    --shadow: 0 2px 8px rgba(0,0,0,0.05);
+    --radius: 8px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-main);
+    line-height: 1.6;
+}
+
+/* Header Styles */
+.top-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    background: var(--card-bg);
+    border-bottom: 1px solid var(--border-color);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--text-main);
+    margin-right: 2rem;
+    letter-spacing: -0.5px;
+}
+
+.search-container-header {
+    flex-grow: 1;
+    max-width: 600px;
+    display: flex;
+    background: var(--bg-color);
+    border-radius: var(--radius);
+    padding: 0.5rem 1rem;
+    border: 1px solid transparent;
+    transition: border 0.2s;
+}
+
+.search-container-header:focus-within {
+    border-color: var(--primary-color);
+    background: var(--card-bg);
+}
+
+#header-search {
+    flex-grow: 1;
+    border: none;
+    background: transparent;
+    outline: none;
+    font-size: 1rem;
+    color: var(--text-main);
+}
+
+#header-search-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+    color: var(--text-secondary);
+}
+
+.btn-login {
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 0.5rem 1.2rem;
+    border-radius: var(--radius);
+    font-weight: 600;
+    cursor: pointer;
+    transition: opacity 0.2s;
+}
+
+.btn-login:hover {
+    opacity: 0.9;
+}
+
+/* Main Container */
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+}
+
+/* Tabs Navigation */
+.tabs-wrapper {
+    margin-bottom: 1.5rem;
+    overflow-x: auto;
+}
+
+.tabs {
+    display: flex;
+    gap: 0.5rem;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 0.5rem;
+}
+
+.tab-btn {
+    background: none;
+    border: none;
+    padding: 0.6rem 1rem;
+    font-size: 0.95rem;
+    color: var(--text-secondary);
+    cursor: pointer;
+    border-radius: var(--radius) var(--radius) 0 0;
+    transition: all 0.2s;
+    white-space: nowrap;
+}
+
+.tab-btn:hover {
+    background-color: var(--hover-bg);
+    color: var(--text-main);
+}
+
+.tab-btn.active {
+    color: var(--primary-color);
+    font-weight: 600;
+    background-color: rgba(255, 80, 0, 0.05);
+}
+
+/* Results Area */
+.results-area {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.welcome-message {
+    text-align: center;
+    padding: 4rem 0;
+    color: var(--text-secondary);
+}
+
+/* Result Cards */
+.result-card {
+    background: var(--card-bg);
+    padding: 1.5rem;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    border: 1px solid var(--border-color);
+}
+
+.result-title {
+    font-size: 1.25rem;
+    color: #1a0dab; /* Classic search link color */
+    text-decoration: none;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.result-title:hover {
+    text-decoration: underline;
+}
+
+.result-url {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+.result-snippet {
+    font-size: 0.95rem;
+    color: #444;
+}
+
+/* Specific Card Styles for Flights/Hotels */
+.flight-card, .hotel-card {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+@media (min-width: 600px) {
+    .flight-card, .hotel-card {
+        flex-direction: row;
+        align-items: center;
+    }
+}
+
+.card-image {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: var(--radius);
+    background-color: #eee;
+}
+
+@media (min-width: 600px) {
+    .card-image {
+        width: 200px;
+        height: 150px;
+    }
+}
+
+.card-details {
+    flex-grow: 1;
+}
+
+.price-tag {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--text-main);
+    margin-top: 0.5rem;
+}
+
+.meta-info {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    margin-bottom: 0.25rem;
+}
+
+footer {
+    text-align: center;
+    padding: 2rem;
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    border-top: 1px solid var(--border-color);
+    margin-top: 3rem;
+}

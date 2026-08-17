@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="EagleSearch is a fast, private and secure search engine for PC, Mac and mobile. Experience privacy-first searching with advanced features." />
+    
+    <!-- Open Graph / Social Media -->
+    <meta property="og:title" content="The search engine that puts you first | EagleSearch" />
+    <meta property="og:description" content="EagleSearch is a fast, private and secure search engine for PC, Mac and mobile. Experience privacy-first searching." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://eaglesearch.com/" />
+    <meta property="og:locale" content="en" />
+    <meta property="og:image" content="/images/eaglesearch-og.png"/>
+    <meta property="og:site_name" content="EagleSearch" />
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image"/>
+    <meta name="twitter:title" content="The search engine that puts you first | EagleSearch"/>
+    <meta name="twitter:description" content="EagleSearch is a fast, private and secure search engine for PC, Mac and mobile."/>
+    <meta name="twitter:site" content="@eaglesearch"/>
+    <meta name="twitter:creator" content="@eaglesearch"/>
+
+    <title>The search engine that puts you first | EagleSearch</title>
+
+    <link rel="canonical" href="https://eaglesearch.com/">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="icon" type="image/png" href='/images/eagle-icon-32x32.png' sizes="32x32" />
+    <link rel="icon" type="image/png" href='/images/eagle-icon-192x192.png' sizes="192x192" />
+    <link rel="apple-touch-icon" href='/images/eagle-icon-180x180.png' />
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "EagleSearch",
+      "url": "https://eaglesearch.com/",
+      "description": "EagleSearch, the search engine that puts you first. Fast, private, and secure searching.",
+      "publisher": {
+        "@type": "Organization",
+        "name": "EagleSearch Inc",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://eaglesearch.com/images/eagle-logo-dark.svg"
+        }
+      },
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://eaglesearch.com/search?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      },
+      "inLanguage": "en-US",
+      "sameAs": [
+        "https://twitter.com/eaglesearch",
+        "https://www.facebook.com/EagleSearch/",
+        "https://github.com/eaglesearch/"
+      ]
+    }
+    </script>
+
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <!-- Header / Navigation -->
+    <header class="site-header">
+        <nav class="navbar">
+            <div class="container nav-container">
+                <a href="/" class="logo">
+                    <img src="/images/eagle-logo.svg" alt="EagleSearch Logo" class="logo-image">
+                    <span class="logo-text">EagleSearch</span>
+                </a>
+                
+                <ul class="nav-menu">
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#search-api">API</a></li>
+                    <li><a href="#business">For Business</a></li>
+                    <li><a href="#download">Download</a></li>
+                    <li><a href="#about">About</a></li>
+                </ul>
+                
+                <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">The search engine that puts <span class="highlight">you first</span></h1>
+                <p class="hero-subtitle">Fast, private, and secure searching with advanced AI-powered results. No tracking, no bias, just pure information.</p>
+                
+                <div class="search-box">
+                    <form action="/search" method="GET" class="search-form">
+                        <input type="text" name="q" placeholder="Search with EagleSearch..." class="search-input" autocomplete="off">
+                        <button type="submit" class="search-button">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="11" cy="11" r="8"></circle>
+                                <path d="m21 21-4.35-4.35"></path>
+                            </svg>
+                            Search
+                        </button>
+                    </form>
+                </div>
+                
+                <div class="hero-cta">
+                    <a href="#download" class="btn btn-primary">Download EagleSearch</a>
+                    <a href="#features" class="btn btn-secondary">Learn More</a>
+                </div>
+            </div>
+            
+            <div class="hero-image">
+                <img src="/images/hero-eagle.svg" alt="EagleSearch Illustration" class="hero-illustration">
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <h2 class="section-title">Why Choose EagleSearch?</h2>
+            <p class="section-subtitle">Experience the future of private, unbiased searching</p>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                        </svg>
+                    </div>
+                    <h3>Privacy First</h3>
+                    <p>No tracking, no profiling. Your searches are yours alone. We don't store your personal information or search history.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
+                        </svg>
+                    </div>
+                    <h3>Lightning Fast</h3>
+                    <p>Optimized search algorithms deliver results in milliseconds. Get answers faster than ever before.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"/>
+                            <line x1="2" y1="12" x2="22" y2="12"/>
+                            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+                        </svg>
+                    </div>
+                    <h3>Unbiased Results</h3>
+                    <p>Our independent index ensures diverse, unbiased search results without filter bubbles or manipulation.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
+                            <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+                        </svg>
+                    </div>
+                    <h3>Secure by Default</h3>
+                    <p>End-to-end encryption for all searches. Advanced protection against malware and phishing sites.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+                            <polyline points="3.27 6.96 12 12.01 20.73 6.96"/>
+                            <line x1="12" y1="22.08" x2="12" y2="12"/>
+                        </svg>
+                    </div>
+                    <h3>AI-Powered</h3>
+                    <p>Advanced AI summarization and instant answers help you find information faster and more accurately.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="3"/>
+                            <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/>
+                        </svg>
+                    </div>
+                    <h3>Customizable</h3>
+                    <p>Tailor your search experience with custom filters, themes, and preferences that stick.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Search API Section -->
+    <section id="search-api" class="api-section">
+        <div class="container">
+            <h2 class="section-title">EagleSearch API</h2>
+            <p class="section-subtitle">Power your applications with our robust search API</p>
+            
+            <div class="api-content">
+                <div class="api-info">
+                    <h3>Integrate EagleSearch into Your Apps</h3>
+                    <p>Access our powerful search infrastructure through a simple REST API. Perfect for developers who need reliable, fast search capabilities.</p>
+                    
+                    <ul class="api-features">
+                        <li>✓ RESTful API with JSON responses</li>
+                        <li>✓ High rate limits for enterprise needs</li>
+                        <li>✓ Comprehensive documentation</li>
+                        <li>✓ SDK support for multiple languages</li>
+                        <li>✓ Real-time analytics dashboard</li>
+                        <li>✓ 99.9% uptime SLA</li>
+                    </ul>
+                    
+                    <div class="api-code-sample">
+                        <pre><code>// Example API request
+curl -X GET "https://api.eaglesearch.com/v1/search?q=privacy+search" \
+  -H "Authorization: Bearer YOUR_API_KEY"
+
+// Response
+{
+  "results": [
+    {
+      "title": "Privacy-First Search",
+      "url": "https://example.com/privacy",
+      "snippet": "Learn about privacy-focused searching..."
+    }
+  ],
+  "total": 1250000,
+  "time": 0.23
+}</code></pre>
+                    </div>
+                    
+                    <a href="/api/docs" class="btn btn-primary">View API Documentation</a>
+                    <a href="/api/pricing" class="btn btn-secondary">See Pricing</a>
+                </div>
+                
+                <div class="api-visual">
+                    <img src="/images/api-diagram.svg" alt="API Integration Diagram" class="api-illustration">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- For Business Section -->
+    <section id="business" class="business-section">
+        <div class="container">
+            <h2 class="section-title">EagleSearch for Business</h2>
+            <p class="section-subtitle">Enterprise-grade search solutions for organizations of all sizes</p>
+            
+            <div class="business-grid">
+                <div class="business-card">
+                    <div class="business-icon">🏢</div>
+                    <h3>Enterprise Search</h3>
+                    <p>Deploy EagleSearch across your organization with custom configurations, SSO integration, and centralized management.</p>
+                    <ul>
+                        <li>Single Sign-On (SSO)</li>
+                        <li>Admin dashboard</li>
+                        <li>Usage analytics</li>
+                        <li>Priority support</li>
+                    </ul>
+                    <a href="/business/enterprise" class="btn btn-outline">Learn More</a>
+                </div>
+                
+                <div class="business-card">
+                    <div class="business-icon">🔒</div>
+                    <h3>Private Index</h3>
+                    <p>Create a custom search index for your internal documents, intranet, or knowledge base with complete privacy.</p>
+                    <ul>
+                        <li>Custom indexing</li>
+                        <li>Access controls</li>
+                        <li>Document parsing</li>
+                        <li>API access</li>
+                    </ul>
+                    <a href="/business/private-index" class="btn btn-outline">Learn More</a>
+                </div>
+                
+                <div class="business-card">
+                    <div class="business-icon">📊</div>
+                    <h3>White Label</h3>
+                    <p>Offer EagleSearch technology under your own brand. Perfect for ISPs, device manufacturers, and service providers.</p>
+                    <ul>
+                        <li>Full branding control</li>
+                        <li>Revenue sharing</li>
+                        <li>Technical integration</li>
+                        <li>Dedicated account manager</li>
+                    </ul>
+                    <a href="/business/white-label" class="btn btn-outline">Learn More</a>
+                </div>
+            </div>
+            
+            <div class="business-cta">
+                <h3>Ready to get started?</h3>
+                <p>Contact our sales team for a customized solution</p>
+                <a href="/business/contact" class="btn btn-primary">Contact Sales</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Download Section -->
+    <section id="download" class="download-section">
+        <div class="container">
+            <h2 class="section-title">Download EagleSearch</h2>
+            <p class="section-subtitle">Available on all your favorite platforms</p>
+            
+            <div class="download-grid">
+                <div class="download-card">
+                    <div class="platform-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+                            <line x1="8" y1="21" x2="16" y2="21"/>
+                            <line x1="12" y1="17" x2="12" y2="21"/>
+                        </svg>
+                    </div>
+                    <h3>Windows</h3>
+                    <p>Windows 10/11 (64-bit)</p>
+                    <a href="/download/windows" class="btn btn-download">Download for Windows</a>
+                </div>
+                
+                <div class="download-card">
+                    <div class="platform-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+                            <path d="M2 17l10 5 10-5"/>
+                            <path d="M2 12l10 5 10-5"/>
+                        </svg>
+                    </div>
+                    <h3>macOS</h3>
+                    <p>macOS 10.15 or later</p>
+                    <a href="/download/macos" class="btn btn-download">Download for macOS</a>
+                </div>
+                
+                <div class="download-card">
+                    <div class="platform-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="5" y="2" width="14" height="20" rx="2" ry="2"/>
+                            <line x1="12" y1="18" x2="12.01" y2="18"/>
+                        </svg>
+                    </div>
+                    <h3>Android</h3>
+                    <p>Android 6.0 or later</p>
+                    <a href="/download/android" class="btn btn-download">Get on Google Play</a>
+                </div>
+                
+                <div class="download-card">
+                    <div class="platform-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="4" y="4" width="16" height="16" rx="2" ry="2"/>
+                            <rect x="9" y="9" width="6" height="6"/>
+                            <line x1="9" y1="1" x2="9" y2="4"/>
+                            <line x1="15" y1="1" x2="15" y2="4"/>
+                            <line x1="9" y1="20" x2="9" y2="23"/>
+                            <line x1="15" y1="20" x2="15" y2="23"/>
+                            <line x1="20" y1="9" x2="23" y2="9"/>
+                            <line x1="20" y1="14" x2="23" y2="14"/>
+                            <line x1="1" y1="9" x2="4" y2="9"/>
+                            <line x1="1" y1="14" x2="4" y2="14"/>
+                        </svg>
+                    </div>
+                    <h3>iOS</h3>
+                    <p>iOS 14.0 or later</p>
+                    <a href="/download/ios" class="btn btn-download">Download on App Store</a>
+                </div>
+                
+                <div class="download-card">
+                    <div class="platform-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="16 18 22 12 16 6"/>
+                            <polyline points="8 6 2 12 8 18"/>
+                        </svg>
+                    </div>
+                    <h3>Linux</h3>
+                    <p>Debian, Ubuntu, Fedora, openSUSE</p>
+                    <a href="/download/linux" class="btn btn-download">Download for Linux</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2 class="section-title">About EagleSearch</h2>
+            
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Our Mission</h3>
+                    <p>EagleSearch was founded with a simple mission: to create a search engine that respects user privacy while delivering exceptional results. We believe that searching the web should be fast, private, and unbiased.</p>
+                    
+                    <h3>Our Technology</h3>
+                    <p>We've built our own independent search index, giving us full control over ranking algorithms and ensuring diverse, unbiased results. Our AI-powered summarization helps you find answers faster.</p>
+                    
+                    <h3>Our Commitment</h3>
+                    <p>We don't track you. We don't profile you. We don't sell your data. Your privacy is our business model, not an afterthought.</p>
+                </div>
+                
+                <div class="about-stats">
+                    <div class="stat">
+                        <span class="stat-number">50M+</span>
+                        <span class="stat-label">Monthly Searches</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">10B+</span>
+                        <span class="stat-label">Pages Indexed</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">99.9%</span>
+                        <span class="stat-label">Uptime</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">0</span>
+                        <span class="stat-label">User Tracking</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <img src="/images/eagle-logo.svg" alt="EagleSearch Logo" class="footer-logo">
+                    <p>The search engine that puts you first. Fast, private, and secure.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Twitter">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="Facebook">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="GitHub">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Products</h4>
+                    <ul>
+                        <li><a href="/search">EagleSearch</a></li>
+                        <li><a href="/api">EagleSearch API</a></li>
+                        <li><a href="/business">For Business</a></li>
+                        <li><a href="/download">Download</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="/help">Help Center</a></li>
+                        <li><a href="/blog">Blog</a></li>
+                        <li><a href="/press">Press Kit</a></li>
+                        <li><a href="/careers">Careers</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="/about">About Us</a></li>
+                        <li><a href="/contact">Contact</a></li>
+                        <li><a href="/privacy">Privacy Policy</a></li>
+                        <li><a href="/terms">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 EagleSearch Inc. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/js/main.js"></script>
+</body>
+</html>

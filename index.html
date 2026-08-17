@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OpenSearch - Private & Fast</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Using a system font stack for performance and native feel -->
+</head>
+<body>
+
+    <!-- Header / Navigation -->
+    <header class="top-bar">
+        <div class="logo">OpenSearch</div>
+        <div class="search-container-header">
+            <input type="text" id="header-search" placeholder="Search the web...">
+            <button id="header-search-btn">🔍</button>
+        </div>
+        <div class="user-actions">
+            <button class="btn-login">Log In</button>
+        </div>
+    </header>
+
+    <!-- Main Content Area -->
+    <main class="container">
+        
+        <!-- Search Tabs -->
+        <div class="tabs-wrapper">
+            <nav class="tabs">
+                <button class="tab-btn active" data-category="all">All</button>
+                <button class="tab-btn" data-category="flights">Flights</button>
+                <button class="tab-btn" data-category="hotels">Hotels</button>
+                <button class="tab-btn" data-category="holidays">Holidays</button>
+                <button class="tab-btn" data-category="cars">Car Rental</button>
+                <button class="tab-btn" data-category="images">Images</button>
+                <button class="tab-btn" data-category="news">News</button>
+            </nav>
+        </div>
+
+        <!-- Results Display -->
+        <div id="results-area" class="results-area">
+            <!-- Dynamic Content Will Be Injected Here -->
+            <div class="welcome-message">
+                <h2>Welcome to OpenSearch</h2>
+                <p>Type a query above to see results for Flights, Hotels, and more.</p>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2023 OpenSearch Project. Privacy Focused.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
